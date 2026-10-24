@@ -1,0 +1,39 @@
+# Node / Dependensi lokal
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Output Hasil Build (jika menggunakan TypeScript/Bundler)
+dist/
+out/
+
+# Sistem Jekyll & Cache
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Environment Variables & Kredensial Sensitif
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# Ekstensi VS Code / Konfigurasi Workspace Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS System Files
+.DS_Store
+Thumbs.db
+jekyll-mcp-0.1.0.vsix

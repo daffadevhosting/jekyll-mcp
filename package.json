@@ -1,0 +1,52 @@
+{
+  "name": "jekyll-mcp",
+  "displayName": "Jekyll Component MCP",
+  "description": "Run jekyll-component-mcp locally and register its tools with VS Code Language Model API",
+  "version": "0.1.0",
+  "publisher": "DaffaDev",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com"
+  },
+  "bugs": {
+    "url": "https://github.com"
+  },
+  "homepage": "https://github.com",
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jekyll-mcp.restart",
+        "title": "Jekyll MCP: Restart Server"
+      },
+      {
+        "command": "jekyll-mcp.showLogs",
+        "title": "Jekyll MCP: Show Logs"
+      }
+    ],
+    "languageModelTools": []
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
