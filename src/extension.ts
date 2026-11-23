@@ -34,11 +34,11 @@ async function startServer(context: vscode.ExtensionContext) {
 
     const transport = new StdioClientTransport({
       command: 'npx',
-      args: ['-y', 'jekyll-component-mcp', '--root', root],
+      args: ['-y', 'jekyll-component-mcp@latest', '--root', root],
       stderr: 'pipe'
     });
 
-    mcpClient = new Client({ name: 'jekyll-mcp-ext', version: '0.1.0' });
+    mcpClient = new Client({ name: 'jekyll-mcp-ext', version: '0.1.1' });
     await mcpClient.connect(transport);
 
     const { tools } = await mcpClient.listTools();

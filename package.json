@@ -2,8 +2,9 @@
   "name": "jekyll-mcp",
   "displayName": "Jekyll Component MCP",
   "description": "Run jekyll-component-mcp locally and register its tools with VS Code Language Model API",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "DaffaDev",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.93.0"
   },
